@@ -1,0 +1,176 @@
+/* The page is built mobile first, remove comments from "*" border to see it around all HTML elements */
+/* * {
+    border: 1px solid black;
+} */
+
+/* General font, colour and text alignment */
+body,
+textarea {
+  margin: 0px;
+  color: #333333;
+  font-size: 1.2em;
+  font-family: Helvetica, sans-serif;
+}
+header,
+#radio-section > p,
+footer {
+  text-align: center;
+}
+/*  -----------------------------------------------------------------------  header styling */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 1em;
+  height: 15em;
+  background: no-repeat center;
+  background-image: url("https://assets.reedpopcdn.com/FIFA-23_zeJU911.jpg/BROK/resize/1920x1920%3E/format/jpg/quality/80/FIFA-23_zeJU911.jpg");
+  background-size: cover;
+}
+header > h1,
+header > p {
+  margin: 0px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-shadow: 0 0 5px #333333;
+}
+header > h1 {
+  font-size: 2em;
+}
+header > p {
+  font-size: 0.7em;
+}
+/*  ----------------------------------------------------------------------- Width properties for sections */
+#details-section > label,
+#details-section > input {
+  width: 80%;
+}
+#dropdown-section > label,
+#dropdown-section > select,
+#radio-section,
+#checkbox-section,
+#text-section,
+textarea {
+  width: 90%;
+}
+/*  ----------------------------------------------------------------------- Required fields styling */
+#details-section > label > span {
+  color: red;
+}
+#details-section > p {
+  color: red;
+  font-size: 0.5em;
+  text-align: center;
+}
+/*  ----------------------------------------------------------------------- input and labels from inline to block */
+#details-section > label,
+#details-section > input,
+#dropdown-section > label,
+#dropdown-section > select,
+#radio-section,
+#checkbox-section,
+#text-section,
+textarea,
+#submit {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px;
+  font-size: 1em;
+  color: #333333;
+}
+#dropdown-section {
+  margin-top: 15px;
+}
+.input-div {
+  width: 60%;
+  margin: auto;
+}
+.input-div > input,
+.input-div > label {
+  margin: 0.5em;
+}
+textarea {
+  margin-top: 15px;
+}
+/*  ----------------------------------------------------------------------- footer styling */
+footer {
+  margin-top: 2em;
+}
+footer > p > a:link {
+  text-decoration: underline;
+  color: black;
+}
+footer > p > a:visited {
+  text-decoration: underline;
+  color: black;
+}
+footer > p > a:hover {
+  text-decoration: none;
+  color: #333333;
+}
+/*  ----------------------------------------------------------------------- For screens wider then 1024px */
+@media only screen and (min-width: 1024px) {
+  /*  ----------------------------------------------------------------------- higher resolution image for wider screens */
+  header {
+    background-image: url("");
+  }
+  header > h1 {
+    font-size: 3em;
+  }
+  header > p {
+    font-size: 1em;
+  }
+  /*  ----------------------------------------------------------------------- swapping to grid alignment for wider screens */
+  #details-section,
+  #dropdown-section {
+    display: grid;
+    grid-template-columns: 42% 25%;
+    text-align: end;
+    grid-row-gap: 1em;
+  }
+  #details-section > label,
+  #dropdown-section > label {
+    margin-right: 0px;
+  }
+  #radio-section,
+  #checkbox-section {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    display: grid;
+    grid-template-columns: 50% 35%;
+    grid-column-gap: 1em;
+  }
+  .radio-p,
+  .checkbox-p {
+    width: 50%;
+    justify-self: end;
+  }
+  .radio-p > p,
+  .checkbox-p > p {
+    margin: 0px;
+    text-align: justify;
+  }
+  .input-div {
+    width: 100%;
+    margin: 0;
+  }
+  #text-section {
+    width: 70%;
+  }
+}
+/*  ----------------------------------------------------------------------- For screens wider then 1366px */
+@media only screen and (min-width: 1366px) {
+  body {
+    width: 1366px;
+    margin: auto;
+  }
+  header > h1 {
+    font-size: 5em;
+  }
+  header > p {
+    font-size: 1em;
+  }
+}

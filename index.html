@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Freecodecamp Survey Form</h1>
+      <p id="description">A short survey about the games you like</p>
+    </header>
+    <main>
+      <form action="" id="survey-form">
+        <section id="details-section">
+          <label for="name" id="name-label">Name <span>*</span></label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your Name"
+            required
+          />
+          <label for="email" id="email-label">Email <span>*</span></label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email adress"
+            required
+          />
+          <label for="number" id="number-label">Age <span>*</span></label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            min="1"
+            max="122"
+            placeholder="Your age"
+            required
+          />
+          <div></div>
+          <!-- placeholder div -->
+          <p>Fields marked with * are required</p>
+        </section>
+        <section id="dropdown-section">
+          <label for="dropdown">What types of games do you like?</label>
+          <select name="dropdown" id="dropdown">
+            <option value="">Please select one</option>
+            <option value="sports">sports</option>
+            <option value="adventure">Adventure</option>
+            <option value="arcade">Arcade</option>
+            <option value="action">Action</option>
+            <option value="kids">kids</option>
+          </select>
+        </section>
+        <section id="radio-section">
+          <div class="radio-p">
+            <p>How many hours do you spend playing games</p>
+          </div>
+          <div class="input-div">
+            <input type="radio" name="radio" id="none-two" value="none-two" />
+            <label class="label1" for="none-two"> 0h to 2h</label><br />
+            <input
+              type="radio"
+              name="radio"
+              id="three-four"
+              value="three-four"
+            />
+            <label class="label2" for="three-four"> 3h to 4h</label><br />
+            <input type="radio" name="radio" id="four-six" value="four-six" />
+            <label class="label3" for="four-six"> 4h to 6h</label><br />
+            <input
+              type="radio"
+              name="radio"
+              id="seven-eight"
+              value="seven-eight"
+            />
+            <label class="label4" for="seven-eight"> 7h to 8h</label><br />
+            <input
+              type="radio"
+              name="radio"
+              id="eight-more"
+              value="eight-more"
+            />
+            <label class="label5" for="eight-more"> 8h and more</label>
+          </div>
+        </section>
+        <section id="checkbox-section">
+          <div class="checkbox-p">
+            <p>Please select games you will like the most:</p>
+          </div>
+          <div class="input-div">
+            <input type="checkbox" value="fifa" id="fifa" name="like" />
+            <label for="fifa">Fifa 23</label><br />
+            <input type="checkbox" value="dead" id="dead" name="like" />
+            <label for="dead">Dead cell</label><br />
+            <input type="checkbox" value="alsphat" id="alsphat" name="like" />
+            <label for="alsphat">Alsphat</label><br />
+            <input type="checkbox" value="nba" id="nba" name="like" />
+            <label for="nba">Nba 2k23</label><br />
+            <input type="checkbox" value="toca" id="toca" name="like" />
+            <label for="toca">Toca life world</label><br />
+            <input
+              type="checkbox"
+              value="stranding"
+              id="stranding"
+              name="anticipate"
+            />
+            <label for="stranding">Death Stranding </label><br />
+            <input type="checkbox" value="simon" id="simon" name="like" />
+            <label for="simon">Simon says</label><br />
+          </div>
+        </section>
+        <section id="text-section">
+          <label for="textarea"
+            >What other titles or games are you excited for or enjoy
+            playing?</label
+          >
+          <textarea
+            name="textarea"
+            id="textarea"
+            cols="30"
+            rows="7"
+            placeholder="Game Title, Next game title, ..."
+          ></textarea>
+        </section>
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <p>Coded by Reginald Emezuom</p>
+    </footer>
+  </body>
+</html>
